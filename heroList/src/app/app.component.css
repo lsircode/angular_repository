@@ -1,0 +1,194 @@
+/* AppComponent's private CSS styles */
+h1 {
+    font-size: 1.2em;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  header {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+  }
+
+  nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+  nav a:visited, a:link {
+    color: #334953;
+  }
+  nav a:hover {
+    color: #039be5;
+    background-color: #cfd8dc;
+  }
+  nav a.active {
+    color: #039be5;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .header01{
+    /* 设置横栏固定不动 */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(233, 230, 230);
+  }
+  .location {
+    position: absolute;
+    width: 61px;
+    height: 38px;
+    line-height: 38px;
+    left: 80px;
+    background-position: left -138px;
+    text-indent: 20px;
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color: #999;
+    cursor: pointer;
+  }
+  .hello{
+    position: absolute;
+    width: 85px;
+    height: 38px;
+    left: 550px;
+    line-height: 38px;
+}
+
+.hello a{
+    font-size: 13px;
+    font-family: "Microsoft YaHei";
+    text-decoration: none;
+    color: #999;
+}
+
+.menu{
+    position: absolute;
+    height: 38px;
+    left: 650px;
+    overflow: hidden;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu li a{
+    position: relative;
+    left: -1px;
+    line-height: 38px;
+    font-size: 13px;
+    font-family: "Microsoft YaHei";/*margin 外边距/边界   border 边框 padding 内边距/填充*/
+    text-decoration: none;
+    color: #999;
+    border-left: 1px solid #999;
+    padding: 0 5px;
+    padding-left: 8px;
+}
+
+
+.menu li a:hover{
+    color: rgb(10, 10, 10);
+}
+/*可展开图标*/
+.menu li span{
+    position: relative;
+    left: -4px;
+    top: 3px;
+}
+
+.search-view {
+    padding-top: 8px;
+    height: 150px;
+    background-color: white; 
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;    
+}
+.image-view {
+  position: absolute;
+  left: 0px;
+}
+.search-input{
+  position: relative;
+  top: 40px;
+  left: 400px;
+  height: 30px;
+  width: 500px;
+  border-radius: 15px;
+  border: 1px solid gray;
+  outline: none;
+}
+.search-menu {
+  position: absolute;
+  top: 110px;
+  left: 445px;
+}
+
+.search-menu li{
+  /*横向排列*/
+  display: inline-block;
+}
+.search-menu li a{
+  position: relative;
+  left: -1px;
+  line-height: 20px;
+  font-size: 13px;
+  font-family: "Microsoft YaHei";
+  text-decoration: none;
+  color: #999;
+  border-left: 1px solid #999;
+  padding: 0 5px;
+  padding-left: 8px;
+}
+.footer-menu {
+  position: absolute;
+  top: 160px;
+  left: 400px;
+}
+
+.footer-menu li{
+  /*横向排列*/
+  display: inline-block;
+}
+.footer-menu li a{
+  position: relative;
+  left: -1px;
+  line-height: 20px;
+  font-size: 13px;
+  font-family: "Microsoft YaHei";
+  text-decoration: none;
+  color: #999;
+  border-left: 1px solid #999;
+  padding: 0 5px;
+  padding-left: 8px;
+}
+.main {
+  width: 400px;
+  background: red;
+  overflow: hidden;
+}
+.left {
+  background: yellow;
+  float: left;
+}
+.right {
+  background: green;
+  float: left;
+}

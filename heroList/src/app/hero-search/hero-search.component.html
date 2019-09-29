@@ -1,0 +1,13 @@
+<div  style="background-color: white" id="search-component">
+  <h4><label for="search-box">🔍 英雄搜索</label></h4>
+    
+  <input style="background-color: greenyellow" #searchBox id="search-box" (input)="search(searchBox.value)" placeholder="请输入你想搜索的英雄"/>
+  <!--搜索结果-->
+   <ul class="search-result">
+      <li *ngFor="let hero of heroes$ | async" >
+          <a routerLink="/detail/{{hero.id}}">
+            {{hero.name}}
+          </a>
+      </li>
+   </ul>
+</div>
